@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="C:\Users\user\web\generalstyle.css">
+<link rel="stylesheet" href="C:\Users\user\web\style2.css">
+<script>
+     function saveData() {
+    const name = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
+    const userData = { name, password };
+    console.log(userData);
+    const userList = [];
+     userList.push({ name, password });
+    localStorage.setItem("userList", JSON.stringify(userList));
+    alert("account created successfully !")
+    window.location.href="index3.html";
+     }
+</script>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>register Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="name">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button onclick="saveData()">register !</button>
+        <p></p>
+        <a href="index3.html">have an account ?</a>
+       
+          
+        </div>
+    </form>
+</body>

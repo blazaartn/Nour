@@ -1,0 +1,42 @@
+<html>
+    <head>
+<link rel="stylesheet" href="C:\Users\user\web\generalstyle.css">
+<link rel="stylesheet" href="C:\Users\user\web\style2.css">
+    </head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="name">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button onclick="checkData()">Log In</button>
+        <p></p>
+        <a href="index4.html"> want to signUp ?</a>
+       
+          
+        </div>
+    </form>
+</body>
+    <script>
+         function checkData() {
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
+        const userList = JSON.parse(localStorage.getItem("userList"));
+        const userExists = userList.some(user => user.name === name && user.password === password);
+        if (userExists) {
+            window.location.href="index4.html";
+        } else {
+            alert("Invalid name or password. Please try again.");
+        }
+    }
+    </script>
+</html>
