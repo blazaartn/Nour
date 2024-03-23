@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-    background: linear-gradient(to right , aqua,rgb(201, 22, 171));
-}
+        
 .class1 {
     justify-content: space-around;
     display: flex;
 }
 .class2 {
     text-align: center;
-    margin-top: 100px;
+    height: 400px;
+    margin-left:50px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
 }
 .class3 {
     margin-top: 100px;
 }
 h1 {
-    font-size: 120px;
-    color: rgb(0, 0, 0);
+    font-size: 60px;
+    color: rgb(255, 254, 254);
 }
 img {
     margin-top: 100px;
@@ -43,16 +53,17 @@ hr {
 }
 p {
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 20px;
 }
 button {
     
-    width: 200px;
-    height: 50px;
+    width: 120px;
+    height: 30px;
     border-radius: 30px;
     border: solid 2px rgb(6, 29, 29);
     background-color: white;
-    font-size: 40px;
+    margin-top: 50px;
+    font-size: 20px;
     transition: 1s;
 }
 button:hover {
@@ -60,15 +71,53 @@ button:hover {
     rotate: -0deg;
     box-shadow: 2px 2px 20px 2px aqua;
 }
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
 
     </style>
 </head>
 <body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
     <div class="class1">
 
     <div class="class2">
         <h1>about me !</h1>
-        <p>hello eveyone, I'm Nour yahyaoui,tunisian devloper,<br>I' have 16 years old and I'm creating a new website<br>using HTML, css and javaScript !<br>I hope that you will like this website and<strong> Have fun !</strong></p>
+        <p>hello eveyone, <br>I'm Nour yahyaoui,tunisian devloper,<br>I' have 16 years old<br> and I'm creating a new website<br>using HTML, css and javaScript !<br>I hope that you will<br> like this website and<strong> Have fun !</strong></p>
         <hr><button onclick="go()">more</button>
         
     </div>
