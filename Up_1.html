@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bodyyy {
+    display: flex;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 50px 50px 500px;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    background: transparent;
+    backdrop-filter: blur(10px);}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    width: 500px;
+    height: 500px;
+    left: -580px;
+    top: 380px;
+    
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -730px;
+    bottom: 80px;
+}
+body {
+            text-align: center;
+            background-color: #080710;
+        }
+header {
+            background: transparent;
+            height: 100px;
+            border: solid 2px blueviolet;
+            border-radius: 105px 105px 20pc 20pc;
+        }      
+h1 {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            margin-top: -.1px;
+        }
+h1.menu {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin-top: -.1px;
+           
+        }
+menu {
+            background:transparent5;
+            width: 45%;
+            height: 70%;
+            margin-top:50px;
+            border-radius: 50px;
+            border: rgb(126, 8, 223) solid 1px;
+            transition: all 1s;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+menu:hover {
+            transform: translateX(25px);
+            rotate: 2deg;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 20px blueviolet;
+        }
+        h1 {
+            font-size: 60px;
+            color: white;
+            font-family: monospace;
+        }
+    
+    button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: none;
+        background-color: #080710;;
+        margin-left: 470px;
+        
+    }
+    #sidebar {
+      width: 550px;
+      background-color:#080710;
+      padding: 20px;
+      border: solid 1px rgb(90, 173, 232);
+      transition: transform 0.3s ease-in-out;
+      position: fixed;
+      border-radius: 50px 0px 0px 50px;
+      height: 120%;
+      top: 0;
+      left: -500px; 
+    }
+
+    #sidebar.shown {
+      transform: translateX(420px); 
+      box-shadow: 2px 2px 2pc aqua;
+      
+    }
+    #mainContent {
+      flex: 1;
+      padding: 20px;
+    }
+    #slidebar.shown.h11 {
+        opacity: 1;
+    }
+    #slidebar.h11 {
+        opacity: 0;
+    }
+     a {
+        font-size: 20px;
+        margin-top: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+     }
+     li {
+        font-size: 40px;
+        color: white;
+     } .j {
+        width: 600px;
+        height: 400px;
+        border-radius: 30px;
+        border:  1px gray solid ;
+        backdrop-filter: blur(10px);
+        background: transparent;
+        margin-left: 700px;
+        margin-top: 300px;
+
+     }
+     
+     .shape15 { height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        #087708,
+        #3bf611
+    );
+    margin-left: 200px;
+    margin-top: 0px;
+}
+.shape14 { height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        #720790,
+        #f00aca
+    );
+    margin-left: 200px;
+    margin-top: -100px;
+}
+.shape16 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        #dd1313,
+        #d00b0b
+    );
+    margin-left: 310px;
+    margin-top: -350px;
+}
+    
+
+    </style>
+    <title>int main {
+        } </title>
+</head>
+<body>
+    <header><h1>your first experience with us !</h1></header>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="o" style="margin-top: 200px;margin-left: 500px;">
+        <div class="shape15"></div>
+        <div class="shape14"></div>
+        <div class="shape16"></div>
+    </div>
+    
+    <div class="j" style="margin-top: -200px;">
+        <h1 style="color: rgb(255, 255, 255); font-size: 60px;text-decoration: underline rgb(1, 164, 186);margin-top: 50px;" onclick="go()">Css page ! --></h1>
+        <h1 style="color: rgb(255, 255, 255); font-size: 60px;text-decoration: underline rgb(1, 164, 186);margin-top: 0px;" onclick="goo()">HTML page ! --></h1>
+        <h1 style="color: rgb(255, 255, 255); font-size: 50px;text-decoration: underline rgb(1, 164, 186);margin-top: 0px;" onclick="gooo()">JavaScript page ! --></h1>
+
+    </div>
+    <h1 style="color: rgb(255, 255, 255);position: absolute;">//the other pages are not exist right now, but I'm working to complete my company hhhhh !</h1>
+    <div id="sidebar" class="sidebar">
+
+        <button id="menuButton" style="color: white;font-size: 20px;"><p style="margin-top: -10px;color: white;font-size: 20px;">_<br>_<br>_</p></button>
+        <h1 class="h11" style="font-size: 39px; margin-top: -50px;margin-left: 50pxpx;">this are all pages:</h1>
+        <li><a href="C:\Users\user\Upgraded Up.html">The main page </a></li>
+        <p></p>
+        <li><a href="C:\Users\user\index3.html">The login page </a></li>
+        <p></p>
+        <li><a href="C:\Users\user\index4.html">The inscription page </a></li>
+        <p></p>
+        <li><a href="#">Account</a></li>
+        <p></p>
+        <li><a href="#">About Us</a></li>
+    </div>
+<script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+
+    menuButton.addEventListener("click", function() {
+      sidebar.classList.toggle("shown");
+    });
+    function go() {
+        window.location.href="CssPage.html";
+
+    }
+    function goo() {
+        window.location.href="HTMLpage.html";
+
+    }
+    function gooo() {
+        window.location.href="fff.html";
+
+    }
+  </script>
+    
+</body>
+</html>
