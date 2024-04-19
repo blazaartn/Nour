@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getInfo() {
+           
+    const arabic1 = document.getElementById("a111").value;
+    const arabic2 = document.getElementById("a112").value;
+    const arabic3 = document.getElementById("a1").value;
+
+    const arabic = ((arabic1*2)+arabic2+arabic3)/4;
+    
+    // _____________________________________________________________
+
+    const frensh1 = document.getElementById("a211").value;
+    const frensh2 = document.getElementById("a212").value;
+    const frensh3 = document.getElementById("a2").value;
+    
+    const frensh = ((frensh1*2)+frensh2+frensh3)/4;
+    
+    // _____________________________________________________________
+    const english1 = document.getElementById("a311").value;
+    const english2 = document.getElementById("a312").value;
+    const english3 = document.getElementById("a3").value;
+    
+    const english = ((english1*2)+english2+english3)/4;
+    
+    // _____________________________________________________________
+    const history1 = document.getElementById("a411").value;
+    const history2 = document.getElementById("a412").value;
+    const history3 = document.getElementById("a4").value;
+    
+    const history = ((history1*2)+history2+history3)/4;
+    
+    // Geography
+  const geography1 = document.getElementById("a511").value;
+  const geography2 = document.getElementById("a512").value;
+  const geography3 = document.getElementById("a5").value;
+  const geography = ((geography1 * 2) + geography2 + geography3)/4;
+
+  // Math
+  const math1 = document.getElementById("a611").value;
+  const math2 = document.getElementById("a612").value;
+  const math3 = document.getElementById("a6").value;
+  const math = ((math1 * 2) + math2 + math3)/4;
+
+  // Physics
+  const physics1 = document.getElementById("a711").value;
+  const physics2 = document.getElementById("a712").value;
+  const physics3 = document.getElementById("a7").value;
+  const physics = ((physics1 * 2) + physics2 + physics3)/4;
+
+  // Info
+  const info1 = document.getElementById("a811").value;
+  const info2 = document.getElementById("a812").value;
+  const info3 = document.getElementById("a8").value;
+  const info = ((info1 * 2) + info2 + info3)/4;
+
+  // Civil
+  const civil1 = document.getElementById("a911").value;
+  const civil2 = document.getElementById("a912").value;
+  const civil3 = document.getElementById("a9").value;
+  const civil = ((civil1 * 2) + civil2 + civil3)/4;
+
+  // Sport
+  const sport1 = document.getElementById("a1011").value;
+  const sport2 = document.getElementById("a1012").value;
+  const sport = ((sport1 * 2) + sport2)/3;
+
+  // Islamic
+  const islamic1 = document.getElementById("a1111").value;
+  const islamic2 = document.getElementById("a1112").value;
+  const islamic3 = document.getElementById("a11").value;
+  const islamic = ((islamic1 * 2) + islamic2 + islamic3) / 4;
+
+  // Technical
+  const technical1 = document.getElementById("a1211").value;
+  const technical2 = document.getElementById("a1212").value;
+  
+  const technical = ((technical1 * 2) + technical2 ) / 3;
+
+  const score = (arabic*2)+(frensh*2)+(english*1.5)+(technical*2)+((history+geography)*3)+(civil)+(islamic)+(sport)+(math*4)+(info*3)+(physics*3);
+  const note=score/23.5;
+  console.log("your grad is : " + note);
+  console.log("your score is : " + score);
+  
+}
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+    input {
+        width: 180px;
+        height: 30px;
+        border-radius: 15px;
+    border: solid 1px burlywood;  
+  }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      float: center;
+      width: 180px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    body{
+    background-color: #000000;
+}
+
+.background .shape{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -20px;
+    top: -20px;
+    animation: walk 60s infinite linear alternate;
+}
+@keyframes walk {
+    from{box-shadow: none;
+        transform: translateY(500px);
+        
+ }
+ to {
+    
+    transform: translateY(0px);
+    box-shadow: #3d22b3 2px 2px 200px 2px;
+ }
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+    animation: walk2 40s linear infinite alternate;
+}
+@keyframes walk2  {
+    0% {
+        transform:translateX(-500px);
+        transform:translateY(-500px);
+    }
+    100% {
+        transform:translateX(0px);
+        transform:translateY(0px);
+        box-shadow: #f09819 2px 2px 200pc 2px;
+    }   
+}
+table {
+    color: wheat;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+@media screen and (max-width:1200px) {
+  input {
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+    border: solid 1px burlywood;  
+  }
+  button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      float: center;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape">
+    
+        </div>
+    <div class="shape"></div>
+    </div>
+
+  <h1>Welcome on my website:</h1>
+  <h2>Please fill the table with your information to get your note!</h2>
+
+  <table>
+    <tr>
+      <th>Subject</th>
+      <th>Synthese</th>
+      <th>Controle</th>
+      <th>Orale/controle 2</th>
+    </tr> 
+    <tr>
+      <th>Arabic</th>
+      <td><input type="number" id="a111"></td>
+      <td><input type="number" id="a112"></td>
+      <td><input type="number" id="a1"></td>
+    </tr>
+    <tr>
+      <th>French</th>  <td><input type="number" id="a211"></td>
+      <td><input type="number" id="a212"></td>
+      <td><input type="number" id="a2"></td>
+    </tr>
+    <tr>
+      <th>English</th>  <td><input type="number" id="a311"></td>
+      <td><input type="number" id="a312"></td>
+      <td><input type="number" id="a3"></td>
+    </tr>
+    <tr>
+      <th>History</th>  <td><input type="number" id="a411"></td>
+      <td><input type="number" id="a412"></td>
+      <td><input type="number" id="a4"></td>
+    </tr>
+    <tr>
+      <th>Geography</th>  <td><input type="number" id="a511"></td>
+      <td><input type="number" id="a512"></td>
+      <td><input type="number" id="a5"></td>
+    </tr>
+    <tr>
+      <th>Math</th>  <td><input type="number" id="a611"></td>
+      <td><input type="number" id="a612"></td>
+      <td><input type="number" id="a6"></td>
+    </tr>
+    <tr>
+      <th>Physics</th>  <td><input type="number" id="a711"></td>
+      <td><input type="number" id="a712"></td>
+      <td><input type="number" id="a7"></td>
+    </tr>
+    <tr>
+      <th>Info</th>  <td><input type="number" id="a811"></td>
+      <td><input type="number" id="a812"></td>
+      <td><input type="number" id="a8"></td>
+    </tr>
+    <tr>
+      <th>Civil</th>  <td><input type="number" id="a911"></td>
+      <td><input type="number" id="a912"></td>
+      <td><input type="number" id="a9"></td>
+    </tr>
+    <tr>
+      <th>Sport</th>  <td><input type="number" id="a1011"></td>
+      <td><input type="number" id="a1012"></td>
+      <td><input type="number" id="a10"></td>
+    </tr>
+    <tr>
+      <th>Islamic</th>  <td><input type="number" id="a1111"></td>
+      <td><input type="number" id="a1112"></td>
+      <td><input type="number" id="a11"></td>
+    </tr>
+    <tr>
+      <th>Technical</th>  <td><input type="number" id="a1211"></td>
+      <td><input type="number" id="a1212"></td>
+      <td>
+          <button onclick="getInfo()">calculate now !</button>
+
+      </td>
+      
+    </tr>
+  </table>
+</body></html>
+
